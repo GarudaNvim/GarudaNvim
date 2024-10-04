@@ -5,5 +5,9 @@
 
 Installation:
 ```
-wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/main/installer.sh && chmod +x installer.sh && ./installer.sh
+wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/main/installGarudaNvim.sh
+chmod +x installGarudaNvim.sh && ./installGarudaNvim.sh
+rm installGarudaNvim.sh
 ```
+
+Happy Coding with **GarudaNvim**! 💻
