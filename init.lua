@@ -1,1 +1,2 @@
-require("garudanvim.keymaps")
+-- Core Setup
+require("garudanvim.core")
