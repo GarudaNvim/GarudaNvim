@@ -43,6 +43,32 @@ chmod +x installGarudaNvim.sh && ./installGarudaNvim.sh
 rm installGarudaNvim.sh
 ```
 
+#### Uninstallation
+```
+wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/main/uninstallGarudaNvim.sh
+chmod +x uninstallGarudaNvim.sh && ./uninstallGarudaNvim.sh
+rm uninstallGarudaNvim.sh
+```
+
+---
+
+## Support
+
+If you like this project, please consider giving it a star ⭐ on GitHub – it helps the project grow and reach more people! Your support is much appreciated!
+</br>
+
+If you're interested in supporting the development of GarudaNvim further, please consider [sponsoring this project](https://github.com/sponsors/prrockzed). Your contributions will help cover expenses and enable more frequent updates and enhancements. Thank you for your support!
+
+---
+
+## Acknowledgements
+
+Thanks to [Neovim](https://github.com/neovim/neovim) for enabling the creation of a powerful and customizable terminal-based code editor.
+</br>
+A special thank you to all the creators and maintainers of the plugins used in the repo, which have significantly improved the functionality and user experience of GarudaNvim.
+
 ---
 
 Happy Coding with **GarudaNvim**! 💻
+</br>
+P.S. - This project has been started by **Priyanshu Ranjan**, a final year student from **IIT Kharagpur**
