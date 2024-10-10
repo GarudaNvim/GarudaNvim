@@ -9,7 +9,7 @@
 -- Shorten function name
 local map = vim.api.nvim_set_keymap
 
--- non-repetitive action of noremap and silent
+-- Non-repetitive action of noremap and silent
 local opts = { noremap = true, silent = true }
 
 --Remap space as leader key
@@ -30,6 +30,10 @@ map("n", "<C-w>", ":resize +1<CR>", opts)
 map("n", "<C-a>", ":vertical resize -2<CR>", opts)
 map("n", "<C-s>", ":vertical resize +2<CR>", opts)
 
+-- Go to  beginning and end
+map("n", "<C-e>", "$", opts) -- End of line
+map("n", "<C-b>", "0", opts) -- Beginning of line
+
 -- Navigate buffers
 map("n", "<S-l>", ":bnext<CR>", opts)
 map("n", "<S-h>", ":bprevious<CR>", opts)
@@ -48,6 +52,12 @@ map("n", "<Space>e", "<cmd> NvimTreeToggle <CR>", opts)
 -- Insert --
 -- Press kj fast to exit insert mode
 map("i", "kj", "<ESC>", opts)
+
+-- Navigate within insert mode
+map("i", "<C-h>", "<Left>", opts) -- Move left
+map("i", "<C-l>", "<Right>", opts) -- Move right
+map("i", "<C-j>", "<Down>", opts) -- Move down
+map("i", "<C-k>", "<Up>", opts) -- Move up
 
 -- Visual --
 -- Stay in indent mode
