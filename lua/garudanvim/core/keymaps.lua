@@ -12,6 +12,11 @@ local map = vim.api.nvim_set_keymap
 -- non-repetitive action of noremap and silent
 local opts = { noremap = true, silent = true }
 
+--Remap space as leader key
+map("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Normal --
 -- Better window navigation
 map("n", "<C-h>", "<C-w>h", opts)
