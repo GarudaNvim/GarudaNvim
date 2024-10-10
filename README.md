@@ -1,6 +1,7 @@
 <div align="center">
-  <img width="722" alt="Organization's Avatar" src="https://github.com/user-attachments/assets/39cdf8f0-c8f4-44e6-845d-a1e0fbbeac8a">
+  <img width="722" alt="GarudaNvim" src="https://github.com/user-attachments/assets/39cdf8f0-c8f4-44e6-845d-a1e0fbbeac8a">
   <p>
+    <p>For those ready to transform their Workflow</p>
     <a href="https://github.com/GarudaNvim/GarudaNvim/releases/latest">
       <img alt="Latest release" src="https://img.shields.io/github/v/release/GarudaNvim/GarudaNvim?style=for-the-badge&logo=github&color=FFB3BA&logoColor=D9E0EE&labelColor=302D41&include_prerelease&sort=semver" />
     </a>
@@ -32,23 +33,42 @@
 
 ---
 
+## Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Support](#support)
+- [Acknowledgements](#acknowledgements)
+
+---
+
+## Introduction
+
 **GarudaNvim** is a blend of **Garuda**, the swift and powerful bird from Indian mythology, and **Neovim**, the highly efficient text editor. Just like Garuda symbolizes speed and agility, GarudaNvim aims to give you a fast, keyboard-centric development experience, allowing you to navigate and code with unparalleled efficiency.
 
 ---
 
-## Installation:
+## Installation
+
+Installation is super easy! Just copy paste the below command on your terminal, press Enter and you are good to go. GarudaNvim will be installed in your machine!
 ```
-wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/main/installGarudaNvim.sh
-chmod +x installGarudaNvim.sh && ./installGarudaNvim.sh
-rm installGarudaNvim.sh
+LATEST=$(curl -s https://api.github.com/repos/GarudaNvim/Installer/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)
+wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/$LATEST/installGarudaNvim.sh
+chmod +x installGarudaNvim.sh && { ./installGarudaNvim.sh } || { echo }
+rm -f installGarudaNvim.sh
 ```
 
 #### Uninstallation
+
+Uninstallion is also easy. Run the following command to remove GarudaNvim and its repositories from your system.
 ```
-wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/main/uninstallGarudaNvim.sh
-chmod +x uninstallGarudaNvim.sh && ./uninstallGarudaNvim.sh
-rm uninstallGarudaNvim.sh
+LATEST=$(curl -s https://api.github.com/repos/GarudaNvim/Installer/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)
+wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/$LATEST/uninstallGarudaNvim.sh
+chmod +x uninstallGarudaNvim.sh && { ./uninstallGarudaNvim.sh } || { echo }
+rm -f uninstallGarudaNvim.sh
 ```
+
+For more information on Installation(and Uninstallation), checkout our [Installer](https://github.com/GarudaNvim/Installer) repo.
 
 ---
 
