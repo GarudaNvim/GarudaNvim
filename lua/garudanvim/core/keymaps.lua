@@ -35,14 +35,14 @@ map("n", "<C-e>", "$", opts) -- End of line
 map("n", "<C-b>", "0", opts) -- Beginning of line
 
 -- Navigate buffers
-map("n", "<S-l>", ":bnext<CR>", opts)
-map("n", "<S-h>", ":bprevious<CR>", opts)
+map("n", "<S-l>", ":BufferNext<CR>", opts)
+map("n", "<S-h>", ":BufferPrevious<CR>", opts)
 
 -- Move text up and down
 map("n", "<S-j>", "<Esc>:m .+1<CR>==gi", opts)
 map("n", "<S-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- Others
+-- Quick Actions
 map("n", "<Esc>", ":noh <CR>", opts) -- Esc to No Highlight
 map("n", "q", ":noh <CR>", opts) -- Esc to No Highlight
 map("n", "<C-c>", "<cmd> %y+ <CR><CR>", opts) -- Copy Whole File

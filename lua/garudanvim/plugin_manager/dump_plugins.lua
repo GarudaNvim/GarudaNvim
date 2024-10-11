@@ -5,15 +5,27 @@ local dump_plugins = {
 		"nvim-tree/nvim-tree.lua",
 		version = "*",
 		lazy = false,
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
 	},
 
   -- colorscheme plugins
   {
     "olimorris/onedarkpro.nvim",
     priority = 1000, -- Ensure it loads first
+  },
+
+  -- tabline at the top
+	{
+		"romgrk/barbar.nvim",
+		lazy = false,
+		dependencies = {
+			"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
+		},
+		version = "^1.0.0", -- optional: only update when a new 1.x version is released
+	},
+
+  -- dependencies
+  {
+    "nvim-tree/nvim-web-devicons",
   },
 }
 
