@@ -7,12 +7,6 @@ local dump_plugins = {
 		lazy = false,
 	},
 
-  -- colorscheme plugins
-  {
-    "olimorris/onedarkpro.nvim",
-    priority = 1000, -- Ensure it loads first
-  },
-
   -- tabline at the top
 	{
 		"romgrk/barbar.nvim",
@@ -28,6 +22,23 @@ local dump_plugins = {
 		"nvim-lualine/lualine.nvim",
 		lazy = false,
 	},
+
+  -- colorscheme plugins
+  {
+    "olimorris/onedarkpro.nvim",
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+  },
+  {
+    "Mofiqul/dracula.nvim",
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+  },
+  {
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+  },
 
   -- dependencies
   {

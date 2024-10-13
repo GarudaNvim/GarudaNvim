@@ -1,5 +1,7 @@
 -- colorschemes configuration goes here
 require("garudanvim.plugin_config.color_config.onedarkpro")
+require("garudanvim.plugin_config.color_config.dracula")
+require("garudanvim.plugin_config.color_config.nordic")
 
 -- colorscheme configuration
 local colorscheme = "onedark_vivid"
