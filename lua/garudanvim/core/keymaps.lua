@@ -38,6 +38,10 @@ map("n", "<C-b>", "0", opts) -- Beginning of line
 map("n", "<S-l>", ":BufferNext<CR>", opts)
 map("n", "<S-h>", ":BufferPrevious<CR>", opts)
 
+-- Move Buffers
+map("n", "<S-i>", ":BufferMoveNext<CR>", opts)
+map("n", "<S-u>", ":BufferMovePrevious<CR>", opts)
+
 -- Move text up and down
 map("n", "<S-j>", "<Esc>:m .+1<CR>==gi", opts)
 map("n", "<S-k>", "<Esc>:m .-2<CR>==gi", opts)
