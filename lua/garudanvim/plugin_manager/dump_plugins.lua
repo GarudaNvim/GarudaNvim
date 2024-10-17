@@ -15,6 +15,12 @@ local dump_plugins = {
     },
 	},
 
+  -- find projects across the machine
+	{
+		"ahmedkhalf/project.nvim",
+		lazy = false,
+	},
+
   -- tabline at the top
 	{
 		"romgrk/barbar.nvim",
