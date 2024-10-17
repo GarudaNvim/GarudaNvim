@@ -37,6 +37,12 @@ local dump_plugins = {
 		lazy = false,
 	},
 
+  -- dashboard/opening setup
+	{
+		"goolord/alpha-nvim",
+		lazy = false,
+	},
+
   -- colorscheme plugins
   {
     "olimorris/onedarkpro.nvim",
