@@ -7,6 +7,14 @@ local dump_plugins = {
 		lazy = false,
 	},
 
+  -- telescope
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = { 
+      "nvim-telescope/telescope-live-grep-args.nvim",
+    },
+	},
+
   -- tabline at the top
 	{
 		"romgrk/barbar.nvim",
@@ -43,6 +51,13 @@ local dump_plugins = {
   -- dependencies
   {
     "nvim-tree/nvim-web-devicons",
+  },
+  {
+		"nvim-telescope/telescope-ui-select.nvim", -- sets vim.ui.select to telescope
+		event = "VeryLazy",
+	},
+  {
+    "nvim-lua/plenary.nvim",
   },
 }
 
