@@ -55,7 +55,17 @@ local dump_plugins = {
     priority = 1000, -- Ensure it loads first
   },
   {
-    'AlexvZyl/nordic.nvim',
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+  },
+  {
+    "tiagovla/tokyodark.nvim",
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+  },
+  {
+    "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000, -- Ensure it loads first
   },
