@@ -51,7 +51,6 @@ map("n", "<Esc>", ":noh <CR>", opts) -- Esc to No Highlight
 map("n", "q", ":noh <CR>", opts) -- Esc to No Highlight
 map("n", "<C-c>", "<cmd> %y+ <CR><CR>", opts) -- Copy Whole File
 map("n", "d", '"_d', opts) -- Delete Without Yanking
-map("n", "<Space>e", "<cmd> NvimTreeToggle <CR>", opts)
 
 -- Insert --
 -- Press kj fast to exit insert mode

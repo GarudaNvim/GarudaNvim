@@ -10,10 +10,15 @@ local dump_plugins = {
   -- telescope
 	{
 		"nvim-telescope/telescope.nvim",
-		dependencies = { 
-      "nvim-telescope/telescope-live-grep-args.nvim",
-    },
+		lazy = false,
 	},
+
+  -- which-key plugin
+  {
+    "folke/which-key.nvim",
+    version = "v1.6.0",
+		event = "VeryLazy",
+  },
 
   -- find projects across the machine
 	{
@@ -75,11 +80,21 @@ local dump_plugins = {
     "nvim-tree/nvim-web-devicons",
   },
   {
-		"nvim-telescope/telescope-ui-select.nvim", -- sets vim.ui.select to telescope
+		"nvim-telescope/telescope-ui-select.nvim", -- for telescope, sets vim.ui.select to telescope
 		event = "VeryLazy",
 	},
   {
+    "nvim-telescope/telescope-live-grep-args.nvim",
+  },
+  {
     "nvim-lua/plenary.nvim",
+  },
+  { 
+    "folke/neoconf.nvim",
+    cmd = "Neoconf"
+  },
+  {
+    "folke/lazydev.nvim",
   },
 }
 
