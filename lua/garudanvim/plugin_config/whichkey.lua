@@ -2,6 +2,86 @@ local wk = require("which-key")
 
 local mappings = {
 	["e"] = { "<cmd> NvimTreeToggle <CR>", "Nvim Tree Toggle" },
+  ["N"] = { "<cmd> enew <CR>", "New buffer" },
+	["s"] = { "<cmd> w! <CR><CR>", "Save" },
+	["q"] = { "<cmd> q! <CR>", "Quit" },
+	["w"] = { "<cmd> BufferClose <CR>", "Close Buffer" },
+	["f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
+	["p"] = { "<cmd> Telescope projects <CR>", "Projects" },
+
+
+	-- Diagnostics
+	d = {
+		name = "Diagnostics",
+		b = { "<cmd> Telescope diagnostics bufnr=0 <CR>", "Buffer Diagnostics" },
+		p = { "<cmd> Telescope diagnostics <CR>", "Workspace Diagnostics" },
+	},
+
+	-- finding files/text etc
+	F = {
+		name = "Find",
+		a = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find All" },
+		l = { "<cmd> Telescope live_grep <CR>", "Find Text" },
+		b = { "<cmd> Telescope buffers <CR>", "Find Buffers" },
+		h = { "<cmd> Telescope help_tags <CR>", "Help Page" },
+		o = { "<cmd> Telescope oldfiles <CR>", "Find Old Files" },
+		k = { "<cmd> Telescope filetypes <CR>", "File Types" },
+		c = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in Current Buffer" },
+	},
+
+
+	-- Git
+	g = {
+		name = "Git",
+		s = { "<cmd> Telescope git_status <CR>", "Git Status" },
+		b = { "<cmd> Telescope git_branches <CR>", "Git branches" },
+		c = { "<cmd> Telescope git_commits <CR>", "Git commit" },
+		f = { "<cmd> Telescope git_files <CR>", "Git files" },
+		h = { "<cmd> Telescope git_stash <CR>", "Git stash" },
+	},
+
+	-- Buffer management using Barbar plugin
+	B = {
+		name = "Buffer",
+		f = { "<cmd> BufferFirst <CR>", "Move to First Buffer" },
+		l = { "<cmd> BufferLast <CR>", "Move to Last Buffer" },
+		p = { "<cmd> BufferPin <CR>", "Pin/Unpin Buffer" },
+		t = { "<cmd> BufferRestore <CR>", "Restore Buffer" },
+		s = { "<cmd> BufferMoveStart <CR>", "Move Buffer to Start" },
+		i = { "<cmd> BufferPick <CR>", "Buffer Pick" },
+		d = { "<cmd> BufferPickDelete <CR>", "Delete Picked Buffer" },
+		c = { "<cmd> BufferCloseAllButCurrentOrPinned <CR>", "Delete Picked Buffer" },
+		o = {
+			name = "Order",
+			n = { "<cmd> BufferOrderByBufferNumber <CR>", "Order by Buffer Number" },
+			d = { "<cmd> BufferOrderByDirectory <CR>", "Order by Directory" },
+			l = { "<cmd> BufferOrderByLanguage <CR>", "Order by Language" },
+			w = { "<cmd> BufferOrderByWindowNumber <CR>", "Order by Window Number" },
+		},
+	},
+
+	-- Update/Install plugins and languages extensions
+	u = {
+		name = "Update/Install",
+		l = {
+			name = "Lazy - Plugin Manager",
+			s = { "<cmd> Lazy sync <CR>", "Sync" },
+			k = { "<cmd> Lazy check <CR>", "Check" },
+			h = { "<cmd> Lazy help <CR>", "Help" },
+			c = { "<cmd> Lazy clean <CR>", "Clean" },
+			e = { "<cmd> Lazy health <CR>", "Health" },
+			l = { "<cmd> Lazy log <CR>", "Log" },
+			u = { "<cmd> Lazy update <CR>", "Update" },
+			r = { "<cmd> Lazy reload <CR>", "Reload" },
+		},
+	},
+
+	-- Setup Related Keymappings
+	z = {
+		name = "Setup Keys",
+		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
+		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
+	},
 }
 
 -- Configuring Which-Key
