@@ -51,6 +51,19 @@ local dump_plugins = {
 		lazy = false,
 	},
 
+  -- toggleterm for different terminals
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*", 
+		event = "VeryLazy",
+  },
+
+  -- lazygit plugin to access lazygit inside GarudaNvim
+  {
+    "kdheepak/lazygit.nvim",
+		event = "VeryLazy",
+  },
+
   -- colorscheme plugins
   {
     "olimorris/onedarkpro.nvim",
