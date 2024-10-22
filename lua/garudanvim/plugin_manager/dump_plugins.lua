@@ -53,7 +53,7 @@ local dump_plugins = {
 
   -- toggleterm for different terminals
   {
-    'akinsho/toggleterm.nvim',
+    "akinsho/toggleterm.nvim",
     version = "*", 
 		event = "VeryLazy",
   },
@@ -90,6 +90,17 @@ local dump_plugins = {
     lazy = false,
     priority = 1000, -- Ensure it loads first
   },
+  {
+    "EdenEast/nightfox.nvim",
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+  },
+  {
+		"catppuccin/nvim",
+		name = "catppuccin",
+    lazy = false,
+    priority = 1000, -- Ensure it loads first
+	},
 
   -- dependencies
   {
