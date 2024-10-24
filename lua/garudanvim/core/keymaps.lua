@@ -31,8 +31,8 @@ map("n", "<C-a>", ":vertical resize -2<CR>", opts)
 map("n", "<C-s>", ":vertical resize +2<CR>", opts)
 
 -- Go to  beginning and end
-map("n", "<C-e>", "$", opts) -- End of line
-map("n", "<C-b>", "0", opts) -- Beginning of line
+map("n", "<C-i>", "0", opts) -- Beginning of line
+map("n", "<C-j>", "$", opts) -- End of line
 
 -- Navigate buffers
 map("n", "<S-l>", ":BufferNext<CR>", opts)
@@ -61,6 +61,10 @@ map("i", "<C-h>", "<Left>", opts) -- Move left
 map("i", "<C-l>", "<Right>", opts) -- Move right
 map("i", "<C-j>", "<Down>", opts) -- Move down
 map("i", "<C-k>", "<Up>", opts) -- Move up
+
+-- Go to  beginning and end
+map("i", "<C-i>", "<ESC>^i", opts) -- beginning of line
+map("i", "<C-j>", "<End>", opts) -- end of line
 
 -- Visual --
 -- Stay in indent mode
