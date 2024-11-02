@@ -32,6 +32,12 @@ local dump_plugins = {
     lazy = true,
   },
 
+  -- tree sitter for syntax highlighting
+	{
+		"nvim-treesitter/nvim-treesitter",
+		lazy = false,
+	},
+
   -- tabline at the top
 	{
 		"romgrk/barbar.nvim",
