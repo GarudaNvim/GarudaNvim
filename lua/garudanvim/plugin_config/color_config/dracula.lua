@@ -1,8 +1,10 @@
+-- attempt to load the dracula colorscheme
 local status_ok, options = pcall(require, "dracula")
 if not status_ok then
 	return
 end
 
+-- setup options for dracula
 options.setup({
   -- customize dracula color palette
   colors = {

@@ -1,8 +1,10 @@
+-- attempt to load the nightfox colorscheme
 local status_ok, options = pcall(require, "nightfox")
 if not status_ok then
 	return
 end
 
+-- setup options for nightfox
 options.setup({
   options = {
     -- Compiled file's destination location

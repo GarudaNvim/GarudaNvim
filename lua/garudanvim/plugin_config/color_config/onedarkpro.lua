@@ -1,8 +1,10 @@
+-- attempt to load the onedarkpro colorscheme
 local status_ok, options = pcall(require, "onedarkpro")
 if not status_ok then
 	return
 end
 
+-- setup options for onedarkpro
 options.setup({
   theme = "onedark_dark",
 

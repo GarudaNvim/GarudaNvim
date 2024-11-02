@@ -1,8 +1,10 @@
+-- attempt to load the catppuccin colorscheme
 local status_ok, options = pcall(require, "catppuccin")
 if not status_ok then
 	return
 end
 
+-- setup options for catppuccin
 options.setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background

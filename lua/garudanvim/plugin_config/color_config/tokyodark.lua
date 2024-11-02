@@ -1,8 +1,10 @@
+-- attempt to load the tokyodark colorscheme
 local status_ok, options = pcall(require, "tokyodark")
 if not status_ok then
 	return
 end
 
+-- setup options for tokyodark
 options.setup({
   transparent_background = false, -- set background to transparent
   gamma = 1.00, -- adjust the brightness of the theme

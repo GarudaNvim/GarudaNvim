@@ -1,8 +1,10 @@
+-- attempt to load the nordic colorscheme
 local status_ok, options = pcall(require, "nordic")
 if not status_ok then
 	return
 end
 
+-- setup options for nordic
 options.setup({
   -- This callback can be used to override the colors used in the base palette.
   on_palette = function(palette) end,

@@ -1,8 +1,10 @@
+-- attempt to load the tokyonight colorscheme
 local status_ok, options = pcall(require, "tokyonight")
 if not status_ok then
 	return
 end
 
+-- setup options for tokyonight
 options.setup({
   style = "moon", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
   light_style = "day", -- The theme is used when the background is set to light
