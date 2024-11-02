@@ -12,7 +12,6 @@ local options = {
 	fileencoding = "utf-8", -- the encoding written to a file
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 
-
   -- numbers and cursorline
 	number = true, -- set numbered lines
 	relativenumber = true, -- set relative numbered lines
@@ -51,6 +50,7 @@ local options = {
 	updatetime = 300, -- faster completion (4000ms default)
 }
 
+-- Loading all options
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end

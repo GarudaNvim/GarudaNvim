@@ -1,9 +1,11 @@
-local status_ok, project = pcall(require, "project_nvim")
+-- attempt to load the nvim-tree plugin
+local status_ok, options = pcall(require, "project_nvim")
 if not status_ok then
 	return
 end
 
-project.setup({
+-- setup options for toggleterm
+options.setup({
 	---@usage set to false to disable project.nvim.
 	active = true,
 	on_config_done = nil,
@@ -39,9 +41,11 @@ project.setup({
 	datapath = vim.fn.stdpath("data"),
 })
 
+-- attempt to load the telescope plugin
 local tele_status_ok, telescope = pcall(require, "telescope")
 if not tele_status_ok then
 	return
 end
 
+-- loads projects in telescopes
 telescope.load_extension("projects")

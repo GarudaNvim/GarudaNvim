@@ -1,4 +1,8 @@
-local wk = require("which-key")
+-- attempt to load the which-key plugin
+local status_ok, options = pcall(require, "which-key")
+if not status_ok then
+	return
+end
 
 local mappings = {
 	["e"] = { "<cmd> NvimTreeToggle <CR>", "Nvim Tree Toggle" },
@@ -187,5 +191,5 @@ local opts = {
 	nowait = true, -- use `nowait` when creating keymaps
 }
 
-wk.setup(setup)
-wk.register(mappings, opts)
+options.setup(setup)
+options.register(mappings, opts)
