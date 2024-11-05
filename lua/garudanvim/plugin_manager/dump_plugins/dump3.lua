@@ -13,4 +13,10 @@ return {
   {
     "nvim-lua/plenary.nvim", -- telescope
   },
+  {
+    "rcarriga/nvim-notify", -- noice
+  },
+  {
+    "MunifTanjim/nui.nvim", -- noice
+  },
 }

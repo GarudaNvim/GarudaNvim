@@ -69,4 +69,10 @@ return {
     "kdheepak/lazygit.nvim",
 		event = "VeryLazy",
   },
+
+  -- noice plugin for nice ui for messages, cmdline and popupmenu
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+  },
 }
