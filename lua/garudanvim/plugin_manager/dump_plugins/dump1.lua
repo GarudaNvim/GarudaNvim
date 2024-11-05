@@ -75,4 +75,10 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
   },
+  
+  -- nvim-surround for changing delimiters pairs with ease
+  {
+    "kylechui/nvim-surround",
+    event = "VeryLazy",
+  }
 }
