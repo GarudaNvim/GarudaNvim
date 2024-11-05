@@ -31,8 +31,8 @@ map("n", "<C-a>", ":vertical resize -2<CR>", opts)
 map("n", "<C-s>", ":vertical resize +2<CR>", opts)
 
 -- Go to  beginning and end
-map("n", "<C-i>", "0", opts) -- Beginning of line
-map("n", "<C-j>", "$", opts) -- End of line
+map("n", "<C-n>", "0", opts) -- Beginning of line
+map("n", "<C-m>", "$", opts) -- End of line
 
 -- Navigate buffers
 map("n", "<S-l>", ":BufferNext<CR>", opts)
@@ -48,9 +48,8 @@ map("n", "<S-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Quick Actions
 map("n", "<Esc>", ":noh <CR>", opts) -- Esc to No Highlight
-map("n", "q", ":noh <CR>", opts) -- Esc to No Highlight
+map("n", "q", ":noh<CR>:NoiceDismiss<CR>", opts) -- No Highlight and Dismiss Noice Notification
 map("n", "<C-c>", "<cmd> %y+ <CR><CR>", opts) -- Copy Whole File
-map("n", "d", '"_d', opts) -- Delete Without Yanking
 
 -- Insert --
 -- Press kj fast to exit insert mode
@@ -63,8 +62,8 @@ map("i", "<C-j>", "<Down>", opts) -- Move down
 map("i", "<C-k>", "<Up>", opts) -- Move up
 
 -- Go to  beginning and end
-map("i", "<C-i>", "<ESC>^i", opts) -- beginning of line
-map("i", "<C-j>", "<End>", opts) -- end of line
+map("i", "<C-n>", "<ESC>^i", opts) -- beginning of line
+map("i", "<C-m>", "<End>", opts) -- end of line
 
 -- Visual --
 -- Stay in indent mode
@@ -78,6 +77,13 @@ map("v", "p", '"_dP', opts)
 
 -- Replacing
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>', opts)
+
+-- Delete without yanking
+map("v", "d", '"_d', opts)
+
+-- Go to  beginning and end
+map("v", "<C-n>", "0", opts) -- Beginning of line
+map("v", "<C-m>", "$", opts) -- End of line
 
 -- Visual Block --
 -- Move text up and down

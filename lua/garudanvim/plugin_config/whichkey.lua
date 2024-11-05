@@ -111,6 +111,7 @@ local mappings = {
 		name = "Setup Keys",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
+		c = { "<cmd> NvimTreeCollapse <CR>", "Checkhealth" },
 	},
 }
 
