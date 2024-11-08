@@ -104,6 +104,17 @@ local mappings = {
 			u = { "<cmd> Lazy update <CR>", "Update" },
 			r = { "<cmd> Lazy reload <CR>", "Reload" },
 		},
+    t = {
+      name = "Treesitter - Syntax Highlighting",
+      i = { "<cmd> TSInstallInfo <CR>", "Install Info" },
+      s = { "<cmd> TSInstallSync <CR>", "Install Sync" },
+      u = { "<cmd> TSUpdate all <CR>", "Update All" },
+      y = { "<cmd> TSUpdateSync <CR>", "Update Sync" },
+      m = { "<cmd> TSModuleInfo <CR>", "Module Info" },
+      a = { "<cmd> TSToggle highlight <CR>", "Toggle Highlight" },
+      b = { "<cmd> TSToggle indent <CR>", "Toggle Indent" },
+      c = { "<cmd> TSToggle incremental_selection <CR>", "Toggle Incremental Selection" },
+    },  
 	},
 
 	-- Setup Related Keymappings
