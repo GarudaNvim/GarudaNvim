@@ -36,6 +36,7 @@
 ## Contents
 
 - [Introduction](#introduction)
+- [Overview](#overview)
 - [Installation](#installation)
 - [Support](#support)
 - [Acknowledgements](#acknowledgements)
@@ -45,6 +46,20 @@
 ## Introduction
 
 **GarudaNvim** is a blend of **Garuda**, the swift and powerful bird from Indian mythology, and **Neovim**, the highly efficient text editor. Just like Garuda symbolizes speed and agility, GarudaNvim aims to give you a fast, keyboard-centric development experience, allowing you to navigate and code with unparalleled efficiency.
+
+---
+
+## Overview
+
+<img width="1440" alt="gn1" src="https://github.com/user-attachments/assets/623f7d89-acfa-4b1b-8780-ba5792b24741">
+
+</br></br>
+<img width="1440" alt="gn2" src="https://github.com/user-attachments/assets/e35410f2-cfeb-4ffd-b12a-fbe1fdc07610">
+
+</br></br>
+<img width="1440" alt="gn3" src="https://github.com/user-attachments/assets/d492034d-e1fb-427b-8aa6-cb9d5ec8ca9f">
+
+</br>
 
 ---
 
