@@ -124,6 +124,19 @@ local mappings = {
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
 		c = { "<cmd> NvimTreeCollapse <CR>", "NvimTree Collapse" },
 	},
+
+	-- Claude Code AI integration
+	a = {
+		name = "Claude Code",
+		c = { "<cmd> ClaudeCode <CR>", "Toggle Claude" },
+		f = { "<cmd> ClaudeCodeFocus <CR>", "Focus Claude" },
+		r = { "<cmd> ClaudeCode --resume <CR>", "Resume Session" },
+		C = { "<cmd> ClaudeCode --continue <CR>", "Continue Session" },
+		m = { "<cmd> ClaudeCodeSelectModel <CR>", "Select Model" },
+		b = { "<cmd> ClaudeCodeAdd % <CR>", "Add Current Buffer" },
+		a = { "<cmd> ClaudeCodeDiffAccept <CR>", "Accept Diff" },
+		d = { "<cmd> ClaudeCodeDiffDeny <CR>", "Deny Diff" },
+	},
 }
 
 -- Configuring Which-Key
@@ -205,3 +218,22 @@ local opts = {
 
 options.setup(setup)
 options.register(mappings, opts)
+
+-- Visual mode mappings
+local visual_mappings = {
+	a = {
+		name = "Claude Code",
+		s = { "<cmd> ClaudeCodeSend <CR>", "Send Selection to Claude" },
+	},
+}
+
+local visual_opts = {
+	mode = "v",
+	prefix = "<leader>",
+	buffer = nil,
+	silent = true,
+	noremap = true,
+	nowait = true,
+}
+
+options.register(visual_mappings, visual_opts)
