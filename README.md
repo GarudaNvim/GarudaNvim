@@ -65,6 +65,27 @@
 
 ## Installation
 
+#### Supported Systems
+
+GarudaNvim supports **macOS** and the following Linux distributions (including their derivatives):
+
+| OS Family | Examples |
+|---|---|
+| Arch | Arch Linux, Manjaro, EndeavourOS, Garuda |
+| Fedora | Fedora, Nobara, Ultramarine |
+| Ubuntu / Debian | Ubuntu, Debian, Linux Mint, Pop!\_OS |
+| CentOS / RHEL | CentOS, RHEL, Rocky Linux, AlmaLinux |
+
+#### Prerequisites
+
+Make sure the following are available before running the installer:
+- **`curl`**, **`wget`**, **`git`** — used by the install command
+- **Neovim >= 0.9.0** — the installer validates this automatically
+
+> **macOS users:** `wget` is not installed by default. Run `brew install wget` first.
+
+#### Install
+
 Installation is super easy! Just copy paste the below command on your terminal, press Enter and you are good to go. GarudaNvim will be installed in your machine!
 ```
 LATEST=$(curl -s https://api.github.com/repos/GarudaNvim/Installer/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)
@@ -75,7 +96,7 @@ rm -f installGarudaNvim.sh
 
 #### Uninstallation
 
-Uninstallion is also easy. Run the following command to remove GarudaNvim and its repositories from your system.
+Uninstallation is also easy. Run the following command to remove GarudaNvim and its repositories from your system.
 ```
 LATEST=$(curl -s https://api.github.com/repos/GarudaNvim/Installer/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)
 wget -q https://raw.githubusercontent.com/GarudaNvim/Installer/$LATEST/uninstallGarudaNvim.sh
