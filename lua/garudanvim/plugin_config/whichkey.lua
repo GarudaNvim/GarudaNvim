@@ -20,6 +20,9 @@ local mappings = {
 		name = "Diagnostics",
 		b = { "<cmd> Telescope diagnostics bufnr=0 <CR>", "Buffer Diagnostics" },
 		p = { "<cmd> Telescope diagnostics <CR>", "Workspace Diagnostics" },
+		n = { "<cmd> lua vim.diagnostic.goto_next() <CR>",  "Next Diagnostic" },
+		v = { "<cmd> lua vim.diagnostic.goto_prev() <CR>",  "Prev Diagnostic" },
+		o = { "<cmd> lua vim.diagnostic.open_float() <CR>", "Open Float" },
 	},
 
 	-- finding files/text etc
@@ -114,7 +117,14 @@ local mappings = {
       a = { "<cmd> TSToggle highlight <CR>", "Toggle Highlight" },
       b = { "<cmd> TSToggle indent <CR>", "Toggle Indent" },
       c = { "<cmd> TSToggle incremental_selection <CR>", "Toggle Incremental Selection" },
-    },  
+    },
+    m = {
+      name = "Mason - LSP Server Manager",
+      o = { "<cmd> Mason <CR>",             "Open Mason" },
+      u = { "<cmd> MasonUpdate <CR>",       "Update Registries" },
+      t = { "<cmd> MasonToolsInstall <CR>", "Install All Tools" },
+      T = { "<cmd> MasonToolsUpdate <CR>",  "Update All Tools" },
+    },
 	},
 
 	-- Setup Related Keymappings
@@ -123,6 +133,25 @@ local mappings = {
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
 		c = { "<cmd> NvimTreeCollapse <CR>", "NvimTree Collapse" },
+	},
+
+	-- LSP
+	l = {
+		name = "LSP",
+		a  = { "<cmd> lua vim.lsp.buf.code_action() <CR>",   "Code Action" },
+		d  = { "<cmd> Telescope lsp_definitions <CR>",        "Go to Definition" },
+		D  = { "<cmd> lua vim.lsp.buf.declaration() <CR>",    "Go to Declaration" },
+		f  = { "<cmd> lua require('conform').format({ async = true, lsp_fallback = false }) <CR>", "Format Buffer" },
+		h  = { "<cmd> lua vim.lsp.buf.hover() <CR>",          "Hover Docs" },
+		i  = { "<cmd> LspInfo <CR>",                          "LSP Info" },
+		n  = { "<cmd> lua vim.lsp.buf.rename() <CR>",         "Rename Symbol" },
+		r  = { "<cmd> Telescope lsp_references <CR>",         "References" },
+		s  = { "<cmd> lua vim.lsp.buf.signature_help() <CR>", "Signature Help" },
+		S  = { "<cmd> LspStop <CR>",                          "Stop LSP" },
+		R  = { "<cmd> LspRestart <CR>",                       "Restart LSP" },
+		t  = { "<cmd> Telescope lsp_type_definitions <CR>",   "Type Definition" },
+		y  = { "<cmd> Telescope lsp_document_symbols <CR>",   "Document Symbols" },
+		w  = { "<cmd> Telescope lsp_workspace_symbols <CR>",  "Workspace Symbols" },
 	},
 
 	-- Claude Code AI integration
