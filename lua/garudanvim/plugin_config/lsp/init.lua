@@ -2,3 +2,4 @@
 require("garudanvim.plugin_config.lsp.mason")
 require("garudanvim.plugin_config.lsp.handlers")
 require("garudanvim.plugin_config.lsp.servers")
+require("garudanvim.plugin_config.lsp.cmp")
