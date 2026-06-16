@@ -135,6 +135,15 @@ local mappings = {
 		c = { "<cmd> NvimTreeCollapse <CR>", "NvimTree Collapse" },
 	},
 
+	-- GarudaNvim Distro Management
+	Z = {
+		name = "GarudaNvim",
+		v = { "<cmd> lua require('garudanvim.updater').version_info() <CR>",  "Version Info" },
+		k = { "<cmd> lua require('garudanvim.updater').check_updates() <CR>", "Check for Updates" },
+		u = { "<cmd> lua require('garudanvim.updater').update_stable() <CR>", "Update to Latest Stable" },
+		U = { "<cmd> lua require('garudanvim.updater').update_latest() <CR>", "Update to Latest Commit" },
+	},
+
 	-- LSP
 	l = {
 		name = "LSP",
