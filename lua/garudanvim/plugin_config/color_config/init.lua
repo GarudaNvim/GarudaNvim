@@ -9,7 +9,8 @@ require("garudanvim.plugin_config.color_config.nightfox")
 require("garudanvim.plugin_config.color_config.doomone")
 
 -- colorscheme configuration
-local colorscheme = "onedark_dark"
+-- local colorscheme = "onedark_dark"
+local colorscheme = "catppuccin-mocha"
 
 -- calling the colorscheme command
 local status_ok, _ = pcall(vim.cmd.colorscheme, colorscheme)

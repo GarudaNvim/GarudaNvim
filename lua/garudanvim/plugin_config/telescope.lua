@@ -75,6 +75,10 @@ options.setup({
 		--   ...
 		-- }
 		-- the picker_config_key will be applied every time you call this built-in picker
+		find_files = {
+			no_ignore = true,                            -- include files listed in .gitignore
+			hidden = true,                               -- include hidden files
+		},
 		colorscheme = {
 			enable_preview = true,                       -- enable preview for colorscheme picker
 		},

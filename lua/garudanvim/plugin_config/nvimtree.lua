@@ -34,7 +34,7 @@ options.setup({
 
 	git = {
 		enable = true,                  -- enable git integration in tree
-		ignore = true,                  -- ignore files listed in .gitignore
+		ignore = false,                 -- show files listed in .gitignore
 		timeout = 500,                  -- set timeout for git integration
 	},
 
