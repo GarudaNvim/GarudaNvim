@@ -6,7 +6,7 @@ end
 
 -- setup treesitter options
 options.setup({
-	-- ensure_installed = "all", -- one of "all" or a list of languages
+	ensure_installed = { "regex", "bash" }, -- parsers required by noice.nvim
 	ignore_install = {}, -- List of parsers to ignore installing
 
 	highlight = {

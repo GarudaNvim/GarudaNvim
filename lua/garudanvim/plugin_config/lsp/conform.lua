@@ -6,7 +6,8 @@ conform.setup({
     c          = { "clang_format" },
     cpp        = { "clang_format" },
     python     = { "ruff_format" },
-    java       = { "google_java_format" },
+    -- java: google-java-format is a JAR, not a binary; conform has no built-in
+    --       config for it. jdtls LSP handles Java diagnostics/navigation.
     go         = { "goimports" },
     javascript = { "prettier" },
     typescript = { "prettier" },

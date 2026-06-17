@@ -82,6 +82,13 @@ return {
     event = "VeryLazy",
   },
 
+  -- snacks.nvim: terminal provider for claudecode.nvim
+  {
+    "folke/snacks.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+
   -- claude code integration
   {
     "coder/claudecode.nvim",
