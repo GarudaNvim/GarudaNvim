@@ -133,6 +133,7 @@ local mappings = {
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
 		c = { "<cmd> NvimTreeCollapse <CR>", "NvimTree Collapse" },
+		a = { "<cmd> lua require('garudanvim.plugin_config.color_config').toggle_transparency() <CR>", "Toggle Transparency" },
 	},
 
 	-- GarudaNvim Distro Management
