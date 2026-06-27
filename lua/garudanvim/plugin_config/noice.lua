@@ -4,6 +4,12 @@ if not status_ok then
 	return
 end
 
+-- set fallback background for nvim-notify so it doesn't warn when transparency is on
+local notify_ok, notify = pcall(require, "notify")
+if notify_ok then
+	notify.setup({ background_colour = "#000000" })
+end
+
 -- setup options for noice
 options.setup({
   cmdline = {
