@@ -32,7 +32,6 @@ map("n", "<C-s>", ":vertical resize +2<CR>", opts)
 
 -- Go to  beginning and end
 map("n", "<C-n>", "0", opts) -- Beginning of line
-map("n", "<C-m>", "$", opts) -- End of line
 
 -- Navigate buffers
 map("n", "<S-l>", ":BufferNext<CR>", opts)
@@ -63,7 +62,6 @@ map("i", "<C-k>", "<Up>", opts) -- Move up
 
 -- Go to  beginning and end
 map("i", "<C-n>", "<ESC>^i", opts) -- beginning of line
-map("i", "<C-m>", "<End>", opts) -- end of line
 
 -- Visual --
 -- Stay in indent mode
@@ -83,7 +81,6 @@ map("v", "d", '"_d', opts)
 
 -- Go to  beginning and end
 map("v", "<C-n>", "0", opts) -- Beginning of line
-map("v", "<C-m>", "$", opts) -- End of line
 
 -- Visual Block --
 -- Move text up and down
